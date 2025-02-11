@@ -1,4 +1,3 @@
-import { RiCloseLine, RiMenu2Line } from '@remixicon/react';
 import React, { useState } from 'react';
 
 const Navbar = () => {
@@ -37,9 +36,9 @@ const Navbar = () => {
                 </a>
             </ul>   
             {menu ? (
-                <RiCloseLine size={30} className='md:hidden absolute right-10 top-6 transition-all duration-300 ' onClick={toggleMenu} />
+                <ion-icon name="close-circle-outline" className='md:hidden absolute right-10 top-6 transition-all duration-300 cursor-pointer' onClick={toggleMenu} />
             ) : (
-                <RiMenu2Line size={30} className='md:hidden absolute right-10 top-6 transition-all duration-300 ' onClick={toggleMenu} />
+                <ion-icon name="menu-outline" className='md:hidden absolute right-10 top-6 transition-all duration-300 cursor-pointer' onClick={toggleMenu} />
             )}
         </nav>
     );
